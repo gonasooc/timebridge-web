@@ -15,13 +15,13 @@
 | 페이지 원고·디자인 | 완료 | A에서 값만 바꾸고 문구는 건드리지 않는다 |
 | 빌드·로컬 검증 | 완료 | A~B 변경 후 `pnpm build`만 재실행 |
 | 확정 값 | 대기 | A의 도메인·국외 이전 국가·시행일·약관 버전 |
-| 호스팅·배포 | 대기 | B의 최초 커밋부터 |
+| 호스팅·배포 | 진행 중 | B-1 최초 커밋 완료. B-2 호스팅 설정부터 |
 | 앱·스토어 반영 | 대기 | B 완료 후 C 진행 |
 
 현재 고정값:
 
 ```text
-저장소: https://github.com/gonasooc/timebridge-web.git (아직 커밋 없음)
+저장소: https://github.com/gonasooc/timebridge-web.git
 운영자: 최관수
 지원 이메일: timebridge.contact@gmail.com
 약관 버전: 1.0.0
@@ -109,24 +109,16 @@ grep -n "약관 버전" terms.html
 
 ### B-1. 저장소 최초 커밋
 
-현재 `main`에 커밋이 하나도 없다.
-
-- [ ] `.env`를 커밋할지 정한다. 공개 도메인 값만 들어 있어 비밀이 아니고 빌드에 필요하므로 커밋을 전제로 두었다.
-      커밋하지 않기로 하면 `.gitignore`에 `.env`를 추가하고 B-2에서 호스팅 환경변수로 넣는다.
-- [ ] 최초 커밋과 push를 한다.
-
-```bash
-git add .
-git status --short
-git commit -m "TimeBridge 소개·정책·지원 랜딩 페이지 추가"
-git push -u origin main
-```
+- [x] `.env`를 커밋할지 정한다. 공개 도메인 값만 들어 있어 비밀이 아니고 빌드에 필요하므로 커밋했다.
+      나중에 커밋하지 않기로 바꾸면 `.gitignore`에 `.env`를 추가하고 B-2에서 호스팅 환경변수로 넣는다.
+- [x] 최초 커밋과 push를 한다.
 
 증거:
 
 ```text
-최초 커밋 해시:
-push 시각:
+최초 커밋 해시: f01f969 feat: add landing, privacy, terms, and support pages
+커밋 파일: 24개
+push: origin main (2026-07-29)
 ```
 
 ### B-2. 정적 호스팅 배포
