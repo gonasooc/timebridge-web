@@ -1,0 +1,21 @@
+{
+  "name": "timebridge-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TimeBridge 소개·개인정보처리방침·서비스 이용약관·지원 랜딩 페이지",
+  "type": "module",
+  "packageManager": "pnpm@10.33.1",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.5"
+  }
+}
