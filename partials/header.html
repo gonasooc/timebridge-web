@@ -1,23 +1,17 @@
-<header class="sticky top-0 z-40 border-b border-line bg-paper/92 backdrop-blur-md">
-  <div class="shell flex h-16 items-center justify-between gap-3">
-    <a href="/" class="flex shrink-0 items-center gap-2.5 rounded-sm py-2" aria-label="TimeBridge 홈">
-      <span class="block size-8 shrink-0">
+<header class="sticky top-0 z-40 bg-paper/92 backdrop-blur-md">
+  <div class="shell flex h-[var(--layout-header-height)] items-center justify-between gap-3">
+    <a href="/" class="flex shrink-0 items-center gap-2.5 rounded-[10px] py-1.5" aria-label="TimeBridge 홈">
+      <span class="block size-7 shrink-0">
         <!-- include: brand-mark.html -->
       </span>
-      <span class="text-[17px] leading-none font-bold tracking-tight">TimeBridge</span>
+      <span class="text-compact leading-none font-medium tracking-tight">TimeBridge</span>
     </a>
 
     <nav aria-label="주요 메뉴">
-      <ul class="flex items-center gap-0.5 text-[15px] font-medium sm:gap-1.5">
-        <li>
-          <a class="site-nav-link flex min-h-11 items-center rounded-sm px-2.5 text-muted sm:px-3" href="/#features">기능</a>
-        </li>
-        <li>
-          <a class="site-nav-link flex min-h-11 items-center rounded-sm px-2.5 text-muted sm:px-3" href="/#faq">FAQ</a>
-        </li>
-        <li>
-          <a class="site-nav-link flex min-h-11 items-center rounded-sm border border-line-strong bg-surface px-3 text-ink" href="/support.html">지원</a>
-        </li>
+      <ul class="flex items-center gap-0.5">
+        <li><a class="nav-link" href="/#features">기능</a></li>
+        <li><a class="nav-link" href="/#faq">FAQ</a></li>
+        <li><a class="nav-link" href="/support.html">지원</a></li>
       </ul>
     </nav>
   </div>

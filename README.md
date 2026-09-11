@@ -3,7 +3,9 @@
 TimeBridge 앱의 공개 랜딩 페이지입니다. 소개 페이지와 함께 스토어 제출에 필요한 개인정보처리방침, 서비스 이용약관,
 지원·계정 삭제 안내를 HTTPS로 배포하기 위한 정적 사이트입니다.
 
-- 디자인 토큰(색·라운드·간격·타이포)은 앱의 `src/theme.ts`를 그대로 옮겼습니다.
+- 색과 라운드 토큰은 앱의 `src/theme.ts`를 그대로 옮겼습니다. 레이아웃·타이포·모션 토큰은 웹에서 따로 정의합니다.
+- 굵기는 Regular(400)과 Medium(500)만 씁니다. 위계는 굵기가 아니라 크기와 색으로 만듭니다.
+- 섹션은 구분선 대신 여백과 표면 차이로 나눕니다. 장식용 그라데이션과 그림자는 쓰지 않습니다.
 - 브랜드 마크는 앱의 `scripts/generate-brand-assets.js` 좌표를 SVG로 다시 그린 것입니다.
 - 정책 원고는 앱 저장소 `docs/release_remaining_tasks.md`의 `2. A — 정책·지원 랜딩 페이지` 절 문안을 반영했습니다.
 
@@ -33,7 +35,9 @@ pnpm preview    # 빌드 결과 확인
 
 - `partials/` — `<!-- include: 이름.html -->` 한 줄로 삽입되는 공용 조각(head 메타, 헤더, 푸터, 아이콘 스프라이트, 브랜드 마크).
   치환은 `vite.config.js`의 `htmlPartials` 플러그인이 빌드/개발 시점에 처리합니다.
-- `src/styles.css` — 앱 테마를 옮긴 `@theme` 토큰, 다크 모드 팔레트, `.card` `.btn` `.pill` `.legal` 등 공용 컴포넌트.
+- `src/styles.css` — 앱 테마를 옮긴 `@theme` 색·라운드 토큰과 타이포 계단, 다크 모드 팔레트,
+  레이아웃·모션 변수(`--layout-*` `--motion-*`), `.shell` `.section` `.card` `.btn` `.pill` `.nav-link` `.legal` 등 공용 컴포넌트.
+  히어로 진입 모션은 로드할 때 한 번만 재생하는 CSS 애니메이션이며 `prefers-reduced-motion`에서는 선언하지 않습니다.
 - `src/main.js` — 헤더 현재 페이지 표시와 푸터 연도 채우기.
 - `public/` — favicon, apple-touch-icon, og 이미지, robots.txt.
 

@@ -4,7 +4,7 @@ import "./styles.css";
 function markCurrentNavLink() {
   const path = window.location.pathname.replace(/index\.html$/, "") || "/";
 
-  for (const link of document.querySelectorAll(".site-nav-link")) {
+  for (const link of document.querySelectorAll(".nav-link")) {
     const target = new URL(link.getAttribute("href"), window.location.origin);
     const targetPath = target.pathname.replace(/index\.html$/, "") || "/";
 
