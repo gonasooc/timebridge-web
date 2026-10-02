@@ -1,466 +1,117 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <!-- include: head.html -->
+<head>
+  <!-- include: head.html -->
+  <title>타임브릿지 — 부모님의 이야기를 듣는 8주</title>
+  <meta name="description" content="무엇부터 물어볼지 막막하다면. 부모님과 나누는 두 번의 인터뷰, 질문 준비부터 대화 기록까지 함께하는 8주 코칭을 미리 만나보세요." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="%VITE_SITE_URL%/" />
+  <meta property="og:url" content="%VITE_SITE_URL%/" />
+  <meta property="og:title" content="타임브릿지 — 부모님의 이야기를 듣는 8주" />
+  <meta property="og:description" content="질문을 준비하고, 이야기를 듣고, 우리 가족의 기록을 남겨요. 부모님 인터뷰 코칭 체험용 시안." />
+</head>
+<body class="coaching-app">
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <!-- include: header.html -->
+  <div class="demo-notice" data-testid="demo-notice"><span class="demo-dot" aria-hidden="true"></span>체험용 시안 <span class="notice-divider" aria-hidden="true">·</span> 상담 신청은 전송되지 않습니다</div>
+  <noscript><p class="no-script">이 미리보기에는 JavaScript가 필요합니다. 브라우저 설정에서 활성화한 뒤 다시 열어주세요. 이 페이지에서는 상담 신청을 접수하지 않습니다.</p></noscript>
 
-    <title>TimeBridge — 하루 한 질문으로 잇는 가족 기록</title>
-    <meta
-      name="description"
-      content="TimeBridge는 부모, 자녀, 조부모처럼 가까운 가족이 하루 한 질문에 각자의 속도로 답하고, 답변과 사진을 함께 모아 보는 비공개 가족 기록 앱입니다."
-    />
-    <link rel="canonical" href="%VITE_SITE_URL%/" />
-    <meta property="og:url" content="%VITE_SITE_URL%/" />
-    <meta property="og:title" content="TimeBridge — 하루 한 질문으로 잇는 가족 기록" />
-    <meta
-      property="og:description"
-      content="떨어져 있어도 가족의 이야기는 이어집니다. 하루 한 질문에 각자의 시간에 답하고, 답변과 사진을 가족의 기록으로 남기세요."
-    />
-  </head>
-
-  <body>
-    <!-- include: icons.html -->
-
-    <a
-      href="#main"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-[10px] focus:bg-green focus:px-4 focus:py-3 focus:text-on-accent"
-    >
-      본문으로 건너뛰기
-    </a>
-
-    <!-- include: header.html -->
-
-    <main id="main">
-      <!--
-        히어로. 한 화면 높이를 채우고 카피와 앱 화면을 가운데 한 열로 둔다.
-        장식용 그라데이션이나 그림자는 쓰지 않는다.
-      -->
-      <section
-        class="hero-enter shell flex min-h-[calc(100svh-var(--layout-header-height))] flex-col items-center pt-[var(--layout-hero-top)] pb-20 text-center"
-      >
-        <p class="pill bg-orange-soft text-orange">
-          <span class="size-1.5 rounded-full bg-current" aria-hidden="true"></span>
-          iOS · Android 출시 준비 중
-        </p>
-
-        <h1 class="mt-6 max-w-[46rem] text-[32px] leading-[1.32] sm:text-section-lg lg:text-display-sm">
-          떨어져 있어도<br />가족의 이야기는 이어집니다
-        </h1>
-
-        <p class="mt-6 max-w-[34rem] text-body text-muted sm:text-body-lg">
-          부모, 자녀, 조부모처럼 가까운 가족이 하루 한 질문에 각자의 속도로 답하고, 답변과 사진을 함께 모아 봅니다.
-          광고와 인앱결제 없이 전면 무료로 시작합니다.
-        </p>
-
-        <div class="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-          <a class="btn btn-primary" href="#features">
-            기능 살펴보기
-            <svg class="size-[18px]" aria-hidden="true"><use href="#i-chevron-right" /></svg>
-          </a>
-          <a class="btn btn-quiet" href="mailto:timebridge.contact@gmail.com?subject=%5BTimeBridge%20%EB%AC%B8%EC%9D%98%5D">
-            <svg class="size-[18px]" aria-hidden="true"><use href="#i-mail" /></svg>
-            문의하기
-          </a>
+  <main id="main" tabindex="-1">
+    <nav class="journey tb-container" aria-label="미리보기 단계" data-journey hidden>
+      <ol>
+        <li><a href="#direction" data-step="direction"><span>01</span>방향 고르기</a></li>
+        <li><a href="#sample" data-step="sample"><span>02</span>샘플 살펴보기</a></li>
+        <li><a href="#consult" data-step="consult"><span>03</span>상담 준비하기</a></li>
+      </ol>
+    </nav>
+    <section data-page="home" aria-labelledby="home-heading">
+      <div class="hero tb-container">
+        <div class="hero-copy">
+          <p class="tb-eyebrow"><span class="short-rule" aria-hidden="true"></span>부모님 인터뷰 코칭</p>
+          <h1 id="home-heading" tabindex="-1">부모님에게도<br />처음인 날들이<br /><em>있었으니까.</em></h1>
+          <p class="hero-description">늘 알던 엄마, 아빠에게<br />처음 듣는 이야기가 있어요.</p>
+          <p class="hero-detail">무엇부터 물어볼지 함께 준비하고,<br />두 번의 대화를 우리 가족의 기록으로 남겨요.</p>
+          <a class="tb-button tb-button-primary hero-cta" href="#direction">우리 부모님 인터뷰 미리보기 <span aria-hidden="true">↗</span></a>
+          <p class="action-note">회원가입 없이 · 질문과 기록 샘플부터</p>
         </div>
-
-        <!-- 앱 화면을 옮겨 온 미리보기. 실제 질문 카드와 답변 카드 구성을 따른다. -->
-        <div
-          class="mt-16 flex w-full max-w-[30rem] flex-col gap-3 text-left sm:mt-20"
-          role="img"
-          aria-label="TimeBridge 앱 화면 미리보기. 오늘의 질문 카드와 가족이 남긴 답변 두 개가 차례로 놓여 있습니다."
-        >
-          <div class="card p-5">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <span class="pill bg-orange-soft text-orange">어린 시절</span>
-              <span class="flex items-center gap-1.5 text-meta text-muted">
-                <svg class="size-[18px] text-green" aria-hidden="true"><use href="#i-check-circle" /></svg>
-                답변 완료
-              </span>
-            </div>
-
-            <p class="mt-4 text-subtitle font-medium">
-              어릴 적 살던 동네에서 가장 좋아하던 장소는 어디였나요?
-            </p>
-
-            <div class="mt-5 flex items-center justify-between">
-              <span class="text-meta text-blue">3개의 가족 답변</span>
-              <svg class="size-5 text-soft" aria-hidden="true"><use href="#i-chevron-right" /></svg>
-            </div>
-          </div>
-
-          <div class="card p-5">
-            <div class="flex items-center gap-2.5">
-              <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-orange-soft text-label font-medium text-orange">
-                아
-              </span>
-              <span>
-                <span class="block text-control leading-tight font-medium">아버지</span>
-                <span class="block text-meta text-soft">어제 오후 8:12</span>
-              </span>
-            </div>
-            <p class="mt-3 text-control text-muted">
-              골목 끝 평상이었지. 여름이면 동네 어른들이 다 거기 모여서 수박을 나눠 먹었단다.
-            </p>
-            <div class="mt-4 flex items-center gap-2">
-              <span class="pill bg-rose-soft text-rose">❤️ 2</span>
-              <span class="pill bg-blue-soft text-blue">😊 1</span>
-              <span class="ml-auto flex items-center gap-1.5 text-meta text-soft">
-                <svg class="size-4" aria-hidden="true"><use href="#i-message-circle" /></svg>
-                댓글 1
-              </span>
-            </div>
-          </div>
-
-          <div class="card p-5">
-            <div class="flex items-center gap-2.5">
-              <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-blue-soft text-label font-medium text-blue">
-                나
-              </span>
-              <span>
-                <span class="block text-control leading-tight font-medium">나</span>
-                <span class="block text-meta text-soft">오늘 오전 7:40</span>
-              </span>
-            </div>
-            <p class="mt-3 text-control text-muted">
-              그 평상 얘기 처음 들어요. 사진 한 장 남아 있을까요?
-            </p>
-          </div>
+        <div class="story-scene">
+          <div class="scene-heading"><span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 2.5h7l3 3V17H5zM12 2.5V6h3M8 9h4M8 12h4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>이야기가 기록이 되면</span><span>서비스 이용 예시</span></div>
+          <article class="story-sheet">
+            <div class="sheet-meta"><div class="sheet-person"><span class="sheet-avatar" aria-hidden="true">정</span><span><strong>이정희 님의 이야기</strong><small>1963년생 · 전주</small></span></div><span class="sheet-badge">가상 인물</span></div>
+            <p class="sheet-chapter">첫 번째 이야기 · 일과 선택</p>
+            <h2>엄마의 가게에<br />첫 손님이 온 날.</h2>
+            <div class="sheet-dialogue"><p class="dialogue-question"><span>자녀</span>“그 바지는 바로 수선했어?”</p><blockquote>“다 해놓고도 자꾸 길이를 다시 재봤어. 남의 가게에서 할 때랑 내 이름 걸고 할 때랑 다르더라.”</blockquote></div>
+            <div class="sheet-bottom"><span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v12H4zM6 5h4M6 8h4M6 11h2" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>말한 순서 그대로, 대화 기록 예시</span><span>01 / 02</span></div>
+          </article>
+          <div class="question-slip"><span class="slip-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M19 15a7.8 7.8 0 0 0 2-5c0-4.4-4-7-9-7S3 5.6 3 10s4 7 9 7h1l4 3v-4.2M8 10h.01M12 10h.01M16 10h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><span class="slip-label">코치와 준비하는 다음 질문</span><p>“손님이 찾아갔을 때는 어떤 기분이었어?”</p></div></div>
+          <p class="scene-disclosure">인물과 대화, 코칭 내용은 모두 가상의 예시입니다.</p>
         </div>
-      </section>
+      </div>
 
-      <!-- 사용 방법 -->
-      <section id="how" class="section shell">
-        <div class="section-head">
-          <p class="eyebrow">사용 방법</p>
-          <h2 class="section-title">세 단계면 가족의 기록이 시작됩니다</h2>
-          <p class="section-lead">
-            같은 시간에 접속할 필요가 없습니다. 각자 편한 때에 답하면 이야기가 자연스럽게 이어집니다.
-          </p>
-        </div>
-
-        <ol class="mt-14 grid gap-4 sm:grid-cols-3 sm:gap-5">
-          <li class="card flex h-full flex-col p-6">
-            <span class="icon-chip bg-green-soft text-green">
-              <svg aria-hidden="true"><use href="#i-users" /></svg>
-            </span>
-            <p class="mt-6 text-meta text-soft">첫 번째</p>
-            <h3 class="mt-1.5 text-emphasis">질문 편지로 가족을 초대해요</h3>
-            <p class="mt-3 text-control text-muted">
-              초대 코드나 링크를 보내면 됩니다. 받는 사람은 앱을 열고 이름만 입력하면 바로 시작할 수 있어요.
-            </p>
-          </li>
-
-          <li class="card flex h-full flex-col p-6">
-            <span class="icon-chip bg-green-soft text-green">
-              <svg aria-hidden="true"><use href="#i-clock" /></svg>
-            </span>
-            <p class="mt-6 text-meta text-soft">두 번째</p>
-            <h3 class="mt-1.5 text-emphasis">각자 편한 시간에 답해요</h3>
-            <p class="mt-3 text-control text-muted">
-              오늘의 질문에 글과 사진 한 장으로 답합니다. 임시저장해 두었다가 천천히 다듬어도 괜찮아요.
-            </p>
-          </li>
-
-          <li class="card flex h-full flex-col p-6">
-            <span class="icon-chip bg-green-soft text-green">
-              <svg aria-hidden="true"><use href="#i-book-open" /></svg>
-            </span>
-            <p class="mt-6 text-meta text-soft">세 번째</p>
-            <h3 class="mt-1.5 text-emphasis">이야기가 기록으로 쌓여요</h3>
-            <p class="mt-3 text-control text-muted">
-              가족의 답변을 읽고 댓글과 반응을 남기면, 지나간 질문과 함께 아카이브와 타임라인에 모입니다.
-            </p>
-          </li>
+      <div class="intro-strip tb-container"><p>멋진 질문보다,<br class="mobile-break" /> 궁금해하는 마음이면 충분해요.</p><span>부모님은 앱 설치 없이,<br />자녀가 인터뷰어가 되어 시작합니다.</span></div>
+      <section id="process" class="tb-section tb-container process-section">
+        <div class="section-intro"><p class="tb-eyebrow">함께하는 8주</p><h2>듣는 일에도<br />작은 준비가 필요해서.</h2><p>질문 앞에서 막히지 않도록,<br />한 번의 대화가 다음 대화로 이어지도록.</p></div>
+        <ol class="process-list">
+          <li><span class="process-number">01</span><div><p class="process-period">1–2주 · 준비</p><h3>우리 부모님을 위한 질문을 골라요</h3><p>첫 상담에서 방향을 잡고, 맞춤 질문 40개와 인터뷰 계획을 함께 준비해요.</p></div></li>
+          <li><span class="process-number">02</span><div><p class="process-period">3–6주 · 대화</p><h3>두 번의 인터뷰를 직접 나눠요</h3><p>익숙한 장소에서, 편한 목소리로. 첫 대화 뒤에는 코치와 돌아보고 다음 질문을 다듬어요.</p></div></li>
+          <li><span class="process-number">03</span><div><p class="process-period">7–8주 · 기록</p><h3>그날의 말을 다시 읽을 수 있게</h3><p>대화 순서와 말한 사람을 살린 전사본을 사람이 검수해요. 마지막 상담에서 함께 돌아봐요.</p></div></li>
         </ol>
       </section>
-
-      <!-- 기능. 표면 차이만으로 앞뒤 섹션과 구분한다. -->
-      <section id="features" class="section bg-surface-muted">
-        <div class="shell">
-          <div class="section-head">
-            <p class="eyebrow">기능</p>
-            <h2 class="section-title">TimeBridge가 하는 일</h2>
-          </div>
-
-          <ul class="mt-14 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-green-soft text-green">
-                <svg aria-hidden="true"><use href="#i-help-circle" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">하루 한 질문</h3>
-              <p class="mt-3 text-control text-muted">
-                어린 시절, 학교, 일, 관계, 취미, 꿈, 일상까지. 기본 질문 82개로 시작하고 우리 가족에게 맞는 질문도 직접
-                더할 수 있습니다.
-              </p>
-            </li>
-
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-orange-soft text-orange">
-                <svg aria-hidden="true"><use href="#i-send" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">질문 편지로 가족 연결</h3>
-              <p class="mt-3 text-control text-muted">
-                초대 코드나 링크 한 번으로 가족을 연결합니다. 같은 시간에 접속하지 않아도 각자 편한 때에 답할 수 있습니다.
-              </p>
-            </li>
-
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-blue-soft text-blue">
-                <svg aria-hidden="true"><use href="#i-image" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">답변과 사진 기록</h3>
-              <p class="mt-3 text-control text-muted">
-                글과 사진 한 장으로 오늘 떠오른 이야기를 남깁니다. 임시저장한 뒤 천천히 다듬을 수도 있습니다.
-              </p>
-            </li>
-
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-rose-soft text-rose">
-                <svg aria-hidden="true"><use href="#i-message-circle" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">가족 답변, 댓글과 반응</h3>
-              <p class="mt-3 text-control text-muted">
-                같은 질문에 남긴 가족의 답변을 읽고, 짧은 댓글과 이모지 반응으로 이야기를 이어갈 수 있습니다.
-              </p>
-            </li>
-
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-green-soft text-green">
-                <svg aria-hidden="true"><use href="#i-archive" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">아카이브와 타임라인</h3>
-              <p class="mt-3 text-control text-muted">
-                지나간 질문과 가족의 답변을 검색해 다시 보고, 쌓여 가는 이야기를 시간순으로 돌아볼 수 있습니다.
-              </p>
-            </li>
-
-            <li class="card flex h-full flex-col p-6">
-              <span class="icon-chip bg-orange-soft text-orange">
-                <svg aria-hidden="true"><use href="#i-shield" /></svg>
-              </span>
-              <h3 class="mt-6 text-emphasis">안전한 가족 기록</h3>
-              <p class="mt-3 text-control text-muted">
-                불편한 답변·댓글·사용자를 신고하고 사용자를 차단할 수 있습니다. 신고한 콘텐츠는 바로 숨겨집니다.
-              </p>
-            </li>
-          </ul>
-
-          <!-- 사용 환경 -->
-          <div class="card mt-14 p-6 sm:p-8">
-            <h3 class="text-emphasis">나에게 맞는 사용 환경</h3>
-            <p class="mt-2 text-control text-muted">
-              스마트폰이 익숙하지 않은 가족도 편하게 볼 수 있도록 설정을 넉넉하게 두었습니다.
-            </p>
-            <ul class="mt-7 grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4">
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 size-5 shrink-0 text-green" aria-hidden="true"><use href="#i-type" /></svg>
-                <span class="text-control">
-                  <span class="block font-medium text-ink">큰 글씨</span>
-                  <span class="block text-muted">모든 화면의 글자를 키웁니다</span>
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 size-5 shrink-0 text-green" aria-hidden="true"><use href="#i-moon" /></svg>
-                <span class="text-control">
-                  <span class="block font-medium text-ink">다크 모드</span>
-                  <span class="block text-muted">어두운 곳에서도 눈이 편하게</span>
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 size-5 shrink-0 text-green" aria-hidden="true"><use href="#i-bell" /></svg>
-                <span class="text-control">
-                  <span class="block font-medium text-ink">알림 설정</span>
-                  <span class="block text-muted">매일 또는 주간으로 선택</span>
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 size-5 shrink-0 text-green" aria-hidden="true"><use href="#i-download" /></svg>
-                <span class="text-control">
-                  <span class="block font-medium text-ink">데이터 내보내기</span>
-                  <span class="block text-muted">기록을 파일로 보관</span>
-                </span>
-              </li>
-            </ul>
-          </div>
+      <section id="package" class="package-section">
+        <div class="tb-container package-layout">
+          <div class="package-heading"><p class="tb-eyebrow">첫 파일럿 · 5가구 모집 계획</p><h2>이야기를 듣는 8주,<br />끝까지 함께해요.</h2><p>운영자가 직접 상담하고 코칭하는<br />부모님 인터뷰 기본 프로그램.</p><p class="price">99,000<span>원 / 가구</span></p></div>
+          <div class="package-includes"><h3>기본 프로그램에 포함돼요</h3><dl><div><dt>1:1 코칭 상담</dt><dd>3회</dd></div><div><dt>우리 부모님 맞춤 질문</dt><dd>40개</dd></div><div><dt>자녀가 진행하는 인터뷰</dt><dd>2회</dd></div><div><dt>전사·사람 검수</dt><dd>녹음 총 2시간까지</dd></div></dl><p class="package-note">기록은 대화 순서와 화자를 유지한 전사본으로 제공해요. 문장 편집·책 제작은 기본 상품에 포함되지 않아요.</p><a class="tb-button tb-button-light" href="#direction">우리 부모님 인터뷰 미리보기 <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
-
-      <!-- 원칙 -->
-      <section id="principles" class="section shell">
-        <div class="lg:grid lg:grid-cols-[0.85fr_1.15fr] lg:items-start lg:gap-16">
-          <div class="section-head">
-            <p class="eyebrow">우리가 지키는 것</p>
-            <h2 class="section-title">가족의 기록을 점수로 만들지 않습니다</h2>
-            <p class="section-lead">
-              TimeBridge는 더 많이 쓰게 만드는 앱이 아니라, 오래 남기고 싶은 이야기를 담는 앱입니다. 그래서 몇 가지는
-              처음부터 만들지 않았습니다.
-            </p>
-          </div>
-
-          <ul class="mt-14 flex flex-col gap-3 lg:mt-0">
-            <li class="card flex items-start gap-4 p-6">
-              <span class="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-green-soft text-green">
-                <svg class="size-4" aria-hidden="true"><use href="#i-check" /></svg>
-              </span>
-              <span>
-                <span class="block text-compact font-medium">점수도 스트릭도 없습니다</span>
-                <span class="mt-1 block text-control text-muted">
-                  며칠 연속으로 답했는지 세지 않고, 가족을 순위로 비교하지 않습니다. 오늘 답하지 못해도 재촉하지 않습니다.
-                </span>
-              </span>
-            </li>
-            <li class="card flex items-start gap-4 p-6">
-              <span class="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-green-soft text-green">
-                <svg class="size-4" aria-hidden="true"><use href="#i-check" /></svg>
-              </span>
-              <span>
-                <span class="block text-compact font-medium">광고도 인앱결제도 없습니다</span>
-                <span class="mt-1 block text-control text-muted">
-                  1.0.0에는 광고, 인앱결제, 구독이 없고 관련 SDK도 넣지 않았습니다.
-                </span>
-              </span>
-            </li>
-            <li class="card flex items-start gap-4 p-6">
-              <span class="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-green-soft text-green">
-                <svg class="size-4" aria-hidden="true"><use href="#i-check" /></svg>
-              </span>
-              <span>
-                <span class="block text-compact font-medium">공개 피드가 없습니다</span>
-                <span class="mt-1 block text-control text-muted">
-                  답변과 사진은 초대 코드로 연결된 가족만 볼 수 있습니다. 낯선 사람에게 보이거나 추천되지 않습니다.
-                </span>
-              </span>
-            </li>
-            <li class="card flex items-start gap-4 p-6">
-              <span class="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-green-soft text-green">
-                <svg class="size-4" aria-hidden="true"><use href="#i-check" /></svg>
-              </span>
-              <span>
-                <span class="block text-compact font-medium">이야기를 팔지 않습니다</span>
-                <span class="mt-1 block text-control text-muted">
-                  가족이 남긴 답변과 사진을 판매하거나 광고에 사용하지 않습니다. 자세한 내용은
-                  <a class="text-green underline underline-offset-3" href="/privacy.html">개인정보처리방침</a>에
-                  적어 두었습니다.
-                </span>
-              </span>
-            </li>
-          </ul>
+      <section id="faq" class="tb-section tb-container faq-layout">
+        <div class="section-intro"><p class="tb-eyebrow">시작하기 전에</p><h2>궁금한 마음부터<br />풀어볼까요.</h2></div>
+        <div class="tb-faq">
+          <details><summary>인터뷰를 해본 적이 없어도 괜찮나요?<span aria-hidden="true">+</span></summary><p>처음 시작하는 자녀를 위한 코칭이에요. 부모님께 어떻게 말을 꺼낼지, 어떤 질문을 고를지 상담에서 함께 준비합니다. 두 번의 인터뷰는 자녀가 직접 진행해요.</p></details>
+          <details><summary>부모님도 가입하거나 앱을 설치해야 하나요?<span aria-hidden="true">+</span></summary><p>부모님은 가입하거나 앱을 설치하지 않아도 됩니다. 자녀가 질문을 준비하고, 서로 편한 방식으로 대화를 나누어요.</p></details>
+          <details><summary>마지막에는 어떤 기록을 받나요?<span aria-hidden="true">+</span></summary><p>두 번의 인터뷰, 총 2시간 이내 녹음에 대해 사람이 검수한 전사본을 받습니다. 대화 순서와 화자를 유지하고 불명확한 말은 표시해요. 이야기를 새로 쓰는 편집이나 책 제작은 포함하지 않습니다.</p></details>
+          <details><summary>녹음과 AI 전사는 어떻게 진행하나요?<span aria-hidden="true">+</span></summary><p>실제 운영에서는 참여자 동의를 얻은 녹음만 다루고, 보안 조건을 확인한 AI 도구로 전사할 계획입니다. 사용할 도구와 자료의 보관·삭제 방식은 확정 후 안내합니다. 이 체험용 시안은 녹음을 받거나 AI로 전사하지 않아요.</p></details>
+          <details><summary>부모님께 아직 이야기하지 않았어도 되나요?<span aria-hidden="true">+</span></summary><p>네. 먼저 샘플을 살펴보고 어떤 대화를 해보고 싶은지 생각해보세요. 실제 인터뷰와 녹음은 부모님의 의사를 확인하고 동의를 얻은 뒤에 진행합니다.</p></details>
         </div>
       </section>
+      <section class="closing tb-container"><p class="tb-eyebrow">우리 가족의 첫 질문</p><h2>어떤 이야기부터<br class="mobile-break" /> 들어보고 싶으세요?</h2><a class="tb-text-link" href="#direction">우리 부모님 인터뷰 미리보기 <span aria-hidden="true">↗</span></a></section>
+    </section>
 
-      <!-- FAQ -->
-      <section id="faq" class="section bg-surface-muted">
-        <div class="shell">
-          <div class="section-head">
-            <p class="eyebrow">자주 묻는 질문</p>
-            <h2 class="section-title">시작하기 전에 궁금한 것들</h2>
-          </div>
+    <section class="flow-page tb-container" data-page="direction" aria-labelledby="direction-heading" hidden>
+      <div class="flow-intro"><p class="tb-eyebrow">01 / 방향 고르기</p><h1 id="direction-heading" tabindex="-1">어떤 이야기가<br />궁금하세요?</h1><p>아직 잘 몰라도 괜찮아요.<br />선택한 방향에 맞춰 질문과 진행 예시를 보여드릴게요.</p><p class="flow-required">아래 세 가지는 하나씩 골라주세요.</p></div>
+      <form id="direction-form" class="direction-form" method="dialog" novalidate>
+        <fieldset data-field="target"><legend><span class="field-number">01</span>누구의 이야기를 듣고 싶으세요?</legend><div class="choice-grid two-columns"><label class="choice compact-choice"><input type="radio" name="target" value="mother" required aria-describedby="target-error" /><span>어머니</span></label><label class="choice compact-choice"><input type="radio" name="target" value="father" required aria-describedby="target-error" /><span>아버지</span></label></div><p class="field-error" id="target-error" hidden>이야기를 나눌 분을 골라주세요.</p></fieldset>
+        <fieldset data-field="birthEra"><legend><span class="field-number">02</span>부모님은 언제 태어나셨나요?</legend><div class="choice-grid era-grid" id="era-choices"></div><p class="field-error" id="birthEra-error" hidden>출생 연대를 골라주세요. 잘 모르겠어요를 선택해도 괜찮아요.</p></fieldset>
+        <fieldset data-field="topic"><legend><span class="field-number">03</span>처음 나누고 싶은 이야기는요?</legend><div class="topic-choices" id="topic-choices"></div><p class="field-error" id="topic-error" hidden>궁금한 주제를 하나 골라주세요.</p></fieldset>
+        <fieldset><legend>조금 걱정되는 게 있나요? <span class="optional-label">선택 · 여러 개 가능</span></legend><div class="concern-choices" id="concern-choices"></div></fieldset>
+        <div class="form-actions"><button type="submit" class="tb-button tb-button-primary" data-testid="direction-submit" disabled>우리 부모님 인터뷰 미리보기 <span aria-hidden="true">→</span></button><p class="action-note">나중에 방향을 바꿔도 괜찮아요.</p></div>
+      </form>
+    </section>
 
-          <div class="mt-14 flex max-w-3xl flex-col gap-3">
-            <details class="faq card">
-              <summary>
-                <span>요금이 있나요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  1.0.0은 전면 무료입니다. 광고, 인앱결제, 구독이 없습니다. 앞으로 유료 기능을 준비하게 되더라도 이미 남긴
-                  가족의 기록을 볼 수 없게 만들지는 않습니다.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq card">
-              <summary>
-                <span>부모님도 어렵지 않게 쓸 수 있나요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  메신저에 답장하듯 오늘의 질문에 답하면 됩니다. 화면마다 다음에 할 일 하나만 크게 보이도록 만들었고, 큰
-                  글씨와 다크 모드, 넉넉한 버튼 크기를 지원합니다.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq card">
-              <summary>
-                <span>로그인이 꼭 필요한가요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  필수 로그인은 없습니다. 온보딩에서 이름을 입력하면 핵심 기능을 사용할 수 있습니다. 카카오 로그인은 프로필
-                  정보를 편하게 불러오기 위한 선택 기능입니다.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq card">
-              <summary>
-                <span>우리가 남긴 답변을 다른 사람이 볼 수 있나요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  공개 피드가 없습니다. 초대 코드로 연결된 가족 구성원만 서로의 답변과 사진을 볼 수 있습니다. 불편한 답변,
-                  댓글, 사용자는 앱에서 신고하고 차단할 수 있습니다.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq card">
-              <summary>
-                <span>기록을 내보내거나 지울 수 있나요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  설정 &gt; 데이터 관리에서 데이터를 파일로 내보낼 수 있고, 계정과 연결된 데이터를 직접 영구 삭제할 수도
-                  있습니다. 절차는
-                  <a href="/support.html">지원·계정 삭제 안내</a>에 단계별로 적어 두었습니다.
-                </p>
-              </div>
-            </details>
-
-            <details class="faq card">
-              <summary>
-                <span>어떤 기기에서 쓸 수 있나요?</span>
-                <svg class="faq-caret" aria-hidden="true"><use href="#i-chevron-down" /></svg>
-              </summary>
-              <div class="faq-body">
-                <p>
-                  iPhone과 Android 스마트폰을 지원하며 현재 App Store와 Google Play 출시를 준비하고 있습니다. 출시 일정이
-                  정해지면 이 페이지에서 안내하겠습니다.
-                </p>
-              </div>
-            </details>
-          </div>
+    <section class="sample-page tb-container" data-page="sample" aria-labelledby="sample-heading" hidden>
+      <header class="sample-intro"><div><p class="tb-eyebrow">02 / 샘플 살펴보기</p><p id="sample-selection" class="selection-label"></p><h1 id="sample-heading" data-testid="sample-heading" tabindex="-1"></h1><p id="sample-context"></p></div><a href="#direction" class="tb-text-link small-link" data-testid="sample-edit">선택 바꾸기 <span aria-hidden="true">↗</span></a></header>
+      <div class="sample-columns">
+        <div class="sample-main">
+          <section class="question-preview"><div class="preview-heading"><span class="tb-eyebrow">우리 부모님께 물어볼 질문</span><span class="folio">01</span></div><h2>이렇게 대화를 열어봐요.</h2><p class="opener" id="sample-opener"></p><ol class="question-list" id="sample-questions" data-testid="sample-question-list"></ol><p class="small-note">미리보기 질문 6개예요. 실제 코칭에서는 상담을 바탕으로 맞춤 질문 40개를 준비합니다.</p><div class="era-prompt"><span class="tb-eyebrow">기억을 여는 질문 하나 더</span><p id="era-question"></p><span id="era-context" class="small-note"></span></div></section>
+          <section class="record-preview"><div class="preview-heading"><span class="tb-eyebrow">이야기가 기록이 되면</span><span class="folio">02</span></div><h2>그날의 말투까지,<br />다시 읽을 수 있도록.</h2><p class="fiction-notice" data-testid="sample-disclosure" id="sample-disclosure"></p><div class="persona-line"><span class="persona-initial" aria-hidden="true">정</span><div><h3>가상 인물 이정희 님</h3><p id="persona-description"></p></div></div><div class="transcript" id="sample-excerpt"></div><p class="small-note">‘예시’ 숫자는 대화 순서예요. 실제 녹음 시각이 아닙니다. 들리지 않거나 확인이 필요한 말은 [불분명]으로 표시합니다.</p><aside class="coach-note" data-testid="sample-coach-note"><p class="tb-eyebrow">대화 뒤, 코치의 한마디 · 가상 예시</p><p id="sample-coach-note"></p></aside></section>
         </div>
-      </section>
+        <aside class="sample-aside"><div class="plan-note"><p class="tb-eyebrow">두 번의 대화, 이렇게</p><h2>우리 가족의<br />작은 인터뷰 계획</h2><ol id="sample-goals" class="goal-list"></ol><div id="sample-concerns" class="concern-help"></div><div class="sample-package"><p>8주 코칭 기본 프로그램</p><strong>99,000<span>원 / 가구</span></strong><span>상담 3회 · 질문 40개 · 인터뷰 2회<br />총 2시간 녹음 전사·사람 검수</span></div><a href="#consult" class="tb-button tb-button-primary" data-testid="sample-to-consult">상담 내용 준비하기 <span aria-hidden="true">→</span></a><p class="action-note">체험용 시안 · 전송되지 않아요</p></div></aside>
+      </div>
+    </section>
 
-      <!-- 마무리 -->
-      <section class="section-tight shell">
-        <div class="mx-auto flex max-w-[34rem] flex-col items-center text-center">
-          <span class="block size-12">
-            <!-- include: brand-mark.html -->
-          </span>
-          <h2 class="mt-7 text-heading sm:text-section">
-            부모님의 이야기가 사라지기 전에 남겨보세요
-          </h2>
-          <p class="mt-4 text-compact text-muted">
-            오늘의 질문 하나면 충분합니다. 출시 소식이나 궁금한 점은 언제든 이메일로 알려주세요.
-          </p>
-          <div class="mt-9 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
-            <a class="btn btn-primary" href="mailto:timebridge.contact@gmail.com?subject=%5BTimeBridge%20%EB%AC%B8%EC%9D%98%5D">
-              <svg class="size-[18px]" aria-hidden="true"><use href="#i-mail" /></svg>
-              timebridge.contact@gmail.com
-            </a>
-            <a class="btn btn-secondary" href="/support.html">지원·계정 삭제 안내</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- include: footer.html -->
-  </body>
+    <section class="flow-page consult-page tb-container" data-page="consult" aria-labelledby="consult-heading" hidden>
+      <div class="flow-intro"><p class="tb-eyebrow">03 / 상담 준비하기</p><h1 id="consult-heading" tabindex="-1">시작하기 전에,<br />지금의 마음을<br />알려주세요.</h1><p>함께 나눌 이야기를 미리 정리해요.<br />모르는 항목은 천천히 결정해도 괜찮아요.</p><div class="consult-selection"><span class="tb-eyebrow">선택한 인터뷰 방향</span><p id="consult-selection"></p><a href="#direction" class="tb-text-link small-link">방향 바꾸기 <span aria-hidden="true">↗</span></a></div><a href="#sample" class="back-link">← 샘플 다시 보기</a></div>
+      <div class="consult-body"><div class="draft-notice"><span class="tb-eyebrow">지금은 체험용 화면이에요</span><p>가상의 이름과 이메일로 체험해주세요. 입력 내용은 전송·저장되지 않으며, 새로고침하면 사라져요. 실제 상담 신청은 접수하지 않습니다.</p></div>
+        <form id="consult-form" method="dialog" novalidate autocomplete="off">
+          <div class="text-fields"><div class="text-field"><label for="display-name">이름 또는 별칭</label><input id="display-name" name="displayName" type="text" maxlength="40" required autocomplete="off" aria-describedby="displayName-error" placeholder="예: 김이음" /><p class="field-error" id="displayName-error" hidden>체험에 사용할 이름 또는 별칭을 입력해주세요.</p></div><div class="text-field"><label for="email">이메일</label><input id="email" name="email" type="email" maxlength="254" required autocomplete="off" spellcheck="false" inputmode="email" aria-describedby="email-error" placeholder="예: sample@example.com" /><p class="field-error" id="email-error" hidden>이메일 형식으로 입력해주세요. 예: sample@example.com</p></div></div>
+          <fieldset data-field="timing"><legend>언제쯤 시작하고 싶으세요?</legend><div class="choice-grid"><label class="choice compact-choice"><input name="timing" value="soon" type="radio" required aria-describedby="timing-error" /><span>가능하면 곧</span></label><label class="choice compact-choice"><input name="timing" value="month" type="radio" required aria-describedby="timing-error" /><span>한 달 안에</span></label><label class="choice compact-choice"><input name="timing" value="undecided" type="radio" required aria-describedby="timing-error" /><span>아직 미정이에요</span></label></div><p class="field-error" id="timing-error" hidden>시작 시기를 골라주세요.</p></fieldset>
+          <fieldset data-field="interviewMethod"><legend>어떤 방식으로 이야기 나눌까요?</legend><div class="choice-grid two-columns"><label class="choice compact-choice"><input name="interviewMethod" value="visit" type="radio" required aria-describedby="interviewMethod-error" /><span>직접 만나서</span></label><label class="choice compact-choice"><input name="interviewMethod" value="phone" type="radio" required aria-describedby="interviewMethod-error" /><span>전화로</span></label><label class="choice compact-choice"><input name="interviewMethod" value="video" type="radio" required aria-describedby="interviewMethod-error" /><span>영상 통화로</span></label><label class="choice compact-choice"><input name="interviewMethod" value="undecided" type="radio" required aria-describedby="interviewMethod-error" /><span>아직 모르겠어요</span></label></div><p class="field-error" id="interviewMethod-error" hidden>대화 방식을 골라주세요.</p></fieldset>
+          <fieldset data-field="parentReadiness"><legend>부모님께 이야기를 꺼내보셨나요?</legend><div class="choice-grid"><label class="choice compact-choice"><input name="parentReadiness" value="ready" type="radio" required aria-describedby="parentReadiness-error" /><span>함께 해보기로 했어요</span></label><label class="choice compact-choice"><input name="parentReadiness" value="notyet" type="radio" required aria-describedby="parentReadiness-error" /><span>아직 말씀드리기 전이에요</span></label><label class="choice compact-choice"><input name="parentReadiness" value="hesitant" type="radio" required aria-describedby="parentReadiness-error" /><span>부모님이 망설이고 계세요</span></label></div><p class="field-error" id="parentReadiness-error" hidden>지금 상황에 가까운 항목을 골라주세요.</p></fieldset>
+          <div class="form-actions"><button type="submit" class="tb-button tb-button-primary" data-testid="consult-preview-button" disabled>작성 내용 확인하기 <span aria-hidden="true">→</span></button><p class="action-note">상담 신청이나 결제로 이어지지 않습니다.</p></div>
+        </form>
+        <section id="consult-summary" class="consult-summary" data-testid="consult-summary" aria-labelledby="summary-heading" hidden><p class="tb-eyebrow">작성 내용 미리보기</p><h2 id="summary-heading" tabindex="-1">상담 전, 이런 이야기를 나눠요.</h2><p class="summary-disclaimer">아직 신청되지 않았어요. 이 시안에서는 입력 내용이 전송·저장되지 않습니다.</p><dl id="summary-details"></dl><div class="summary-actions"><button type="button" class="tb-button tb-button-secondary" id="edit-draft">내용 수정하기</button><button type="button" class="tb-text-link small-link" id="clear-draft">입력 내용 지우기</button></div></section>
+      </div>
+    </section>
+  </main>
+  <!-- include: footer.html -->
+</body>
 </html>

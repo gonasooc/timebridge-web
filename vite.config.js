@@ -52,10 +52,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        index: page("index"),
-        privacy: page("privacy"),
-        terms: page("terms"),
-        support: page("support")
+        index: page("index")
       }
     }
   }

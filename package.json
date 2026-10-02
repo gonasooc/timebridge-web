@@ -2,7 +2,7 @@
   "name": "timebridge-web",
   "version": "1.0.0",
   "private": true,
-  "description": "TimeBridge 소개·개인정보처리방침·서비스 이용약관·지원 랜딩 페이지",
+  "description": "타임브릿지 부모님 인터뷰 코칭 MVP",
   "type": "module",
   "packageManager": "pnpm@10.33.1",
   "engines": {
@@ -11,9 +11,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/vite": "^4.3.3",
     "tailwindcss": "^4.3.3",
     "vite": "^8.1.5"
